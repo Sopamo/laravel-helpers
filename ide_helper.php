@@ -19,6 +19,14 @@ class Asset extends Laravel\Asset {}
 class Autoloader extends Laravel\Autoloader {}
 class Blade extends Laravel\Blade {}
 class Bundle extends Laravel\Bundle {}
+
+/**
+ * @method static has(string $key) Determine if an item exists in the cache.
+ * @method static retrieve(string $key) Retrieve an item from the cache driver.
+ * @method static put(string $key, mixed $value, int $minutes) Write an item to the cache for a given number of minutes.
+ * @method static forever(string $key, mixed $value) Write an item to the cache for five years.
+ * @method static forget(string $key) Delete an item from the cache.
+ */
 class Cache extends Laravel\Cache {}
 class Config extends Laravel\Config {}
 class Controller extends Laravel\Routing\Controller {}
